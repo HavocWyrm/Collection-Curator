@@ -1,19 +1,26 @@
 {
   "name": "collection-curator",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A web application for organising physical media collections.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production webpack",
     "build-dev": "webpack --watch",
+    "start": "node app.js",
     "server": "nodemon app.js",
-    "dev": "concurrently \"npm run server\" \"npm run build-dev\""
+    "dev": "concurrently \"npm run server\" \"npm run build-dev\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "collections",
+    "organiser",
+    "webapp"
+  ],
+  "author": "HavocWyrm",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
